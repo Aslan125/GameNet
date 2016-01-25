@@ -19,14 +19,14 @@ namespace Test
         static void Main(string[] args)
         {
 
-            //using (GNModel db = new GNModel())
+            //using (DataBase db = new DataBase())
             //{
-            //    db.accounts.Add(new accounts() { Login = "stinger125", Password = "Aslan" });
+            //    db.accounts.Add(new Accounts() { Login = "stqqinger125", Password = "Aslawwwn" });
             //    db.SaveChanges();
 
             //}
 
-                AccountService login = AccountService.GetInstance();
+            AccountService login = AccountService.GetInstance();
 
             
             Console.Read();

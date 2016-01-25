@@ -7,7 +7,7 @@ namespace GameNet.DataBaseServise
     using System.Data.Entity.Spatial;
 
     [Table("gamenet.accounts")]
-    public partial class accounts
+    public partial class Accounts
     {
         [Key]
         [StringLength(50)]

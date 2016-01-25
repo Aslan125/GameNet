@@ -33,9 +33,9 @@ namespace GameNet.LoginService.LoginClientCmd
         {
             string msgStr = string.Empty;
 
-            accounts[] account = null;
+            Accounts[] account = null;
 
-            using (var db = new GNModel())
+            using (var db = new DataBase())
             {
 
                 try

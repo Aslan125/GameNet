@@ -5,22 +5,22 @@ namespace GameNet.DataBaseServise
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
-    public partial class GNModel : DbContext
+    public partial class DataBase : DbContext
     {
-        public GNModel()
+        public DataBase()
             : base("name=GNModel")
         {
         }
 
-        public virtual DbSet<accounts> accounts { get; set; }
+        public virtual DbSet<Accounts> accounts { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<accounts>()
+            modelBuilder.Entity<Accounts>()
                 .Property(e => e.Login)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<accounts>()
+            modelBuilder.Entity<Accounts>()
                 .Property(e => e.Password)
                 .IsUnicode(false);
         }

@@ -73,6 +73,11 @@
   <ItemGroup>
     <Compile Include="DataBaseServise\Accounts.cs" />
     <Compile Include="DataBaseServise\DataBase.cs" />
+    <Compile Include="GameService\World\Continent.cs" />
+    <Compile Include="GameService\World\IWorld.cs" />
+    <Compile Include="GameService\World\Location.cs" />
+    <Compile Include="GameService\World\Vector2.cs" />
+    <Compile Include="GameService\World\World.cs" />
     <Compile Include="LoginService\AccountService.cs" />
     <Compile Include="LoginService\LoginClientCmd\CmdInitOk.cs" />
     <Compile Include="LoginService\LoginClientCmd\CmdLoginOkFail.cs" />
@@ -97,7 +102,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ChatService\" />
-    <Folder Include="GameService\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
